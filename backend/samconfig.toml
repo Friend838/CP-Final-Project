@@ -1,0 +1,12 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "team16-finalProject-usedLambda"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-4e99ynlm92vf"
+s3_prefix = "team16-finalProject-usedLambda"
+region = "us-east-1"
+profile = "CP_team16"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+image_repositories = []

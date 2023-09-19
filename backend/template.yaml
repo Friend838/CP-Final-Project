@@ -1,0 +1,173 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  team16-finalProject-usedLambda
+
+  Sample SAM Template for team16-finalProject-usedLambda
+
+# More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
+Globals:
+  Function:
+    Handler: app.lambda_handler
+    Runtime: python3.9
+    Timeout: 60
+
+Resources:
+#################################
+# Todo Related
+#################################
+
+  # local invoke: sam local invoke QueryTodosFunction -e TodosRelated/QueryTodos/events/event.json --profile CP_team16
+  QueryTodosFunction:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      CodeUri: TodosRelated/QueryTodos/
+      FunctionName: team16_finalProject_QueryTodos
+      Role: arn:aws:iam::591886860315:role/amplify-cp111065508-dev-191719-authRole-idp
+      Architectures:
+        - x86_64
+      Events:
+        queryTodos:
+          Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
+          Properties:
+            Path: /todos/query
+            Method: get
+
+
+  # local invoke: sam local invoke QueryTodosFunction -e TodosRelated/QueryTodos/events/event.json --profile CP_team16
+  QueryFinishTodosFunction:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      CodeUri: TodosRelated/QueryFinishTodos/
+      FunctionName: team16_finalProject_QueryFinishTodos
+      Role: arn:aws:iam::591886860315:role/amplify-cp111065508-dev-191719-authRole-idp
+      Architectures:
+        - x86_64
+      Events:
+        queryTodos:
+          Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
+          Properties:
+            Path: /todos/queryFinish
+            Method: get
+            
+  # local invoke: sam local invoke InsertTodosFunction -e TodosRelated/InsertTodos/events/event.json --profile CP_team16
+  InsertTodosFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: TodosRelated/InsertTodos/
+      FunctionName: team16_finalProject_InsertTodos
+      Role: arn:aws:iam::591886860315:role/amplify-cp111065508-dev-191719-authRole-idp
+      Architectures:
+        - x86_64
+      Events:
+        insertTodos:
+          Type: Api
+          Properties:
+            Path: /todos/insert
+            Method: post
+  
+  UpdateTodosFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: TodosRelated/UpdateTodos/
+      FunctionName: team16_finalProject_UpdateTodos
+      Role: arn:aws:iam::591886860315:role/amplify-cp111065508-dev-191719-authRole-idp
+      Architectures:
+        - x86_64
+      Events:
+        insertTodos:
+          Type: Api
+          Properties:
+            Path: /todos/update
+            Method: post
+
+  DeleteTodosFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: TodosRelated/DeleteTodos/
+      FunctionName: team16_finalProject_DeleteTodos
+      Role: arn:aws:iam::591886860315:role/amplify-cp111065508-dev-191719-authRole-idp
+      Architectures:
+        - x86_64
+      Events:
+        insertTodos:
+          Type: Api
+          Properties:
+            Path: /todos/delete
+            Method: post
+
+#################################
+# Records Related
+#################################
+
+  ActivateProactiveRecord:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: RecordsRelated/ActivateProactiveRecord/
+      FunctionName: team16_finalProject_ActivateRecord
+      Role: arn:aws:iam::591886860315:role/amplify-cp111065508-dev-191719-authRole-idp
+      Architectures:
+        - x86_64
+      Events:
+        insertTodos:
+          Type: Api
+          Properties:
+            Path: /records/activate
+            Method: post
+
+  SendTaskName2EC2:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: RecordsRelated/SendTaskName2EC2/
+      FunctionName: team16_finalProject_SendTaskName2EC2
+      Role: arn:aws:iam::591886860315:role/amplify-cp111065508-dev-191719-authRole-idp
+      Architectures:
+        - x86_64
+      Events:
+        insertTodos:
+          Type: Api
+          Properties:
+            Path: /records/sendTaskName
+            Method: post
+
+  RecordsStatisticsFunction:
+    Type: AWS::Serverless::Function 
+    Properties:
+      CodeUri: RecordsRelated/RecordsStatistics/
+      FunctionName: team16_finalProject_RecordsStatistics
+      Role: arn:aws:iam::591886860315:role/amplify-cp111065508-dev-191719-authRole-idp
+      Architectures:
+        - x86_64
+      Events:
+        queryTodos:
+          Type: Api 
+          Properties:
+            Path: /records/statistics
+            Method: get
+
+  # TasksStatisticsFunction:
+  #   Type: AWS::Serverless::Function 
+  #   Properties:
+  #     CodeUri: RecordsRelated/TasksStatistics/
+  #     FunctionName: team16_finalProject_TasksStatistics
+  #     Role: arn:aws:iam::591886860315:role/amplify-cp111065508-dev-191719-authRole-idp
+  #     Architectures:
+  #       - x86_64
+  #     Events:
+  #       queryTodos:
+  #         Type: Api 
+  #         Properties:
+  #           Path: /records/tasksStatistics
+  #           Method: post
+
+#################################
+# Notification Related
+#################################
+  DayNotificationCreation:
+    Type: AWS::Serverless::Function 
+    Properties:
+      CodeUri: Notifications/WholeDayNotification/
+      FunctionName: team16_finalProject_WholeDayNotification
+      Role: arn:aws:iam::591886860315:role/amplify-cp111065508-dev-191719-authRole-idp
+      Architectures:
+        - x86_64

@@ -1,0 +1,668 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6BDFC829EC7D65E3C6AD8DD7 /* Pods_PomadoraWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B3F647BBF0EB35AE0B28FC /* Pods_PomadoraWatch.framework */; };
+		F47C4AE32A27156D00194551 /* StatisticService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47C4AE22A27156D00194551 /* StatisticService.swift */; };
+		F47C4AE62A306ADD00194551 /* TomatoTimingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47C4AE52A306ADD00194551 /* TomatoTimingService.swift */; };
+		F4DF27F62A1624DC00539587 /* MainMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DF27F52A1624DC00539587 /* MainMenuViewModel.swift */; };
+		F4F690FD29FF452A0041E0D5 /* PomadoraWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F690FC29FF452A0041E0D5 /* PomadoraWatchApp.swift */; };
+		F4F6910129FF452A0041E0D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4F6910029FF452A0041E0D5 /* Assets.xcassets */; };
+		F4F6910429FF452A0041E0D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4F6910329FF452A0041E0D5 /* Preview Assets.xcassets */; };
+		F4F6910E29FF45B30041E0D5 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F6910D29FF45B30041E0D5 /* MainMenuView.swift */; };
+		F4F6911029FF70AA0041E0D5 /* SideMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F6910F29FF70AA0041E0D5 /* SideMenuButton.swift */; };
+		F4F691142A00A0A90041E0D5 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F691132A00A0A90041E0D5 /* SideMenuView.swift */; };
+		F4F691162A00A0CA0041E0D5 /* SideMenuOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F691152A00A0CA0041E0D5 /* SideMenuOptionView.swift */; };
+		F4F691192A00A1480041E0D5 /* SideMenuOptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F691182A00A1480041E0D5 /* SideMenuOptionViewModel.swift */; };
+		F4F6911E2A00A2C20041E0D5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F6911D2A00A2C20041E0D5 /* User.swift */; };
+		F4F691212A00A3730041E0D5 /* DeveloperPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F691202A00A3730041E0D5 /* DeveloperPreview.swift */; };
+		F4F691232A00A44A0041E0D5 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F691222A00A44A0041E0D5 /* Color.swift */; };
+		F4F691252A021A130041E0D5 /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F691242A021A130041E0D5 /* SideMenuViewModel.swift */; };
+		F4F691292A021CE70041E0D5 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F691282A021CE70041E0D5 /* SettingsView.swift */; };
+		F4F6912B2A021D340041E0D5 /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F6912A2A021D340041E0D5 /* SettingsRowView.swift */; };
+		F4F6912F2A0220250041E0D5 /* StatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F6912E2A0220250041E0D5 /* StatisticView.swift */; };
+		F4F691332A022AE10041E0D5 /* MissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F691322A022AE10041E0D5 /* MissionView.swift */; };
+		F4F691352A022AFB0041E0D5 /* MissionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F691342A022AFB0041E0D5 /* MissionRowView.swift */; };
+		F4F691372A0237B60041E0D5 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F691362A0237B60041E0D5 /* Task.swift */; };
+		F4F691392A0A40FE0041E0D5 /* MissionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F691382A0A40FE0041E0D5 /* MissionListView.swift */; };
+		F4F6913B2A0B25430041E0D5 /* NotifySettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F6913A2A0B25430041E0D5 /* NotifySettingView.swift */; };
+		F4F6913D2A0B629C0041E0D5 /* AddMissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F6913C2A0B629C0041E0D5 /* AddMissionView.swift */; };
+		F4F6913F2A0B62AF0041E0D5 /* AddMissionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F6913E2A0B62AF0041E0D5 /* AddMissionButton.swift */; };
+		F4F691412A0B73A00041E0D5 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F691402A0B73A00041E0D5 /* Date.swift */; };
+		F4F691442A0BA73B0041E0D5 /* TodoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F691432A0BA73B0041E0D5 /* TodoService.swift */; };
+		F4F691472A0C848F0041E0D5 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F691462A0C848F0041E0D5 /* String.swift */; };
+		F4F6914B2A126B2E0041E0D5 /* MissionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F6914A2A126B2E0041E0D5 /* MissionDetailView.swift */; };
+		F4F6914E2A1463DC0041E0D5 /* ModifyMissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F6914D2A1463DC0041E0D5 /* ModifyMissionView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		77F84CBEC0E1B8C781CC7D92 /* Pods-PomadoraWatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PomadoraWatch.release.xcconfig"; path = "Target Support Files/Pods-PomadoraWatch/Pods-PomadoraWatch.release.xcconfig"; sourceTree = "<group>"; };
+		B3B3F647BBF0EB35AE0B28FC /* Pods_PomadoraWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PomadoraWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E482B4AF6E0FBB0CD46E8F86 /* Pods-PomadoraWatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PomadoraWatch.debug.xcconfig"; path = "Target Support Files/Pods-PomadoraWatch/Pods-PomadoraWatch.debug.xcconfig"; sourceTree = "<group>"; };
+		F41A79012AB29EC70063637F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F47C4AE22A27156D00194551 /* StatisticService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticService.swift; sourceTree = "<group>"; };
+		F47C4AE42A30537300194551 /* PomadoraWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PomadoraWatch.entitlements; sourceTree = "<group>"; };
+		F47C4AE52A306ADD00194551 /* TomatoTimingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomatoTimingService.swift; sourceTree = "<group>"; };
+		F4DF27F52A1624DC00539587 /* MainMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewModel.swift; sourceTree = "<group>"; };
+		F4F690F929FF452A0041E0D5 /* PomadoraWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PomadoraWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4F690FC29FF452A0041E0D5 /* PomadoraWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomadoraWatchApp.swift; sourceTree = "<group>"; };
+		F4F6910029FF452A0041E0D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4F6910329FF452A0041E0D5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F4F6910D29FF45B30041E0D5 /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
+		F4F6910F29FF70AA0041E0D5 /* SideMenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuButton.swift; sourceTree = "<group>"; };
+		F4F691132A00A0A90041E0D5 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		F4F691152A00A0CA0041E0D5 /* SideMenuOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionView.swift; sourceTree = "<group>"; };
+		F4F691182A00A1480041E0D5 /* SideMenuOptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionViewModel.swift; sourceTree = "<group>"; };
+		F4F6911D2A00A2C20041E0D5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F4F691202A00A3730041E0D5 /* DeveloperPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperPreview.swift; sourceTree = "<group>"; };
+		F4F691222A00A44A0041E0D5 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		F4F691242A021A130041E0D5 /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
+		F4F691282A021CE70041E0D5 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F4F6912A2A021D340041E0D5 /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
+		F4F6912E2A0220250041E0D5 /* StatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticView.swift; sourceTree = "<group>"; };
+		F4F691322A022AE10041E0D5 /* MissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionView.swift; sourceTree = "<group>"; };
+		F4F691342A022AFB0041E0D5 /* MissionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionRowView.swift; sourceTree = "<group>"; };
+		F4F691362A0237B60041E0D5 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		F4F691382A0A40FE0041E0D5 /* MissionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionListView.swift; sourceTree = "<group>"; };
+		F4F6913A2A0B25430041E0D5 /* NotifySettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifySettingView.swift; sourceTree = "<group>"; };
+		F4F6913C2A0B629C0041E0D5 /* AddMissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMissionView.swift; sourceTree = "<group>"; };
+		F4F6913E2A0B62AF0041E0D5 /* AddMissionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMissionButton.swift; sourceTree = "<group>"; };
+		F4F691402A0B73A00041E0D5 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		F4F691432A0BA73B0041E0D5 /* TodoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoService.swift; sourceTree = "<group>"; };
+		F4F691462A0C848F0041E0D5 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		F4F6914A2A126B2E0041E0D5 /* MissionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionDetailView.swift; sourceTree = "<group>"; };
+		F4F6914D2A1463DC0041E0D5 /* ModifyMissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyMissionView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4F690F629FF452A0041E0D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BDFC829EC7D65E3C6AD8DD7 /* Pods_PomadoraWatch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		618A5041E1DE48CD94BD4158 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3B3F647BBF0EB35AE0B28FC /* Pods_PomadoraWatch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD1249CE5637CC9AC89FEE60 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E482B4AF6E0FBB0CD46E8F86 /* Pods-PomadoraWatch.debug.xcconfig */,
+				77F84CBEC0E1B8C781CC7D92 /* Pods-PomadoraWatch.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F4F690F029FF452A0041E0D5 = {
+			isa = PBXGroup;
+			children = (
+				F41A79012AB29EC70063637F /* README.md */,
+				F4F690FB29FF452A0041E0D5 /* PomadoraWatch */,
+				F4F690FA29FF452A0041E0D5 /* Products */,
+				AD1249CE5637CC9AC89FEE60 /* Pods */,
+				618A5041E1DE48CD94BD4158 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F4F690FA29FF452A0041E0D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4F690F929FF452A0041E0D5 /* PomadoraWatch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4F690FB29FF452A0041E0D5 /* PomadoraWatch */ = {
+			isa = PBXGroup;
+			children = (
+				F47C4AE42A30537300194551 /* PomadoraWatch.entitlements */,
+				F4F691422A0BA71D0041E0D5 /* Services */,
+				F4F6911F2A00A35C0041E0D5 /* Extensions */,
+				F4F6911C2A00A29C0041E0D5 /* Models */,
+				F4F6911B2A00A25E0041E0D5 /* App */,
+				F4F6911A2A00A2360041E0D5 /* Core */,
+				F4F6910029FF452A0041E0D5 /* Assets.xcassets */,
+				F4F6910229FF452A0041E0D5 /* Preview Content */,
+			);
+			path = PomadoraWatch;
+			sourceTree = "<group>";
+		};
+		F4F6910229FF452A0041E0D5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F4F6910329FF452A0041E0D5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F4F6910A29FF45480041E0D5 /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				F4F6910C29FF457D0041E0D5 /* ViewModel */,
+				F4F6910B29FF456C0041E0D5 /* View */,
+			);
+			path = MainMenu;
+			sourceTree = "<group>";
+		};
+		F4F6910B29FF456C0041E0D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F4F6910D29FF45B30041E0D5 /* MainMenuView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F4F6910C29FF457D0041E0D5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F4DF27F52A1624DC00539587 /* MainMenuViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F4F691112A00A0780041E0D5 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				F4F691172A00A1260041E0D5 /* ViewModel */,
+				F4F691122A00A0870041E0D5 /* View */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		F4F691122A00A0870041E0D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F4F6910F29FF70AA0041E0D5 /* SideMenuButton.swift */,
+				F4F691132A00A0A90041E0D5 /* SideMenuView.swift */,
+				F4F691152A00A0CA0041E0D5 /* SideMenuOptionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F4F691172A00A1260041E0D5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F4F691182A00A1480041E0D5 /* SideMenuOptionViewModel.swift */,
+				F4F691242A021A130041E0D5 /* SideMenuViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F4F6911A2A00A2360041E0D5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F4F691302A022ABB0041E0D5 /* Mission */,
+				F4F6912C2A021FFC0041E0D5 /* Statistic */,
+				F4F691262A021C6D0041E0D5 /* Settings */,
+				F4F6910A29FF45480041E0D5 /* MainMenu */,
+				F4F691112A00A0780041E0D5 /* SideMenu */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F4F6911B2A00A25E0041E0D5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F4F690FC29FF452A0041E0D5 /* PomadoraWatchApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F4F6911C2A00A29C0041E0D5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F4F6911D2A00A2C20041E0D5 /* User.swift */,
+				F4F691362A0237B60041E0D5 /* Task.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F4F6911F2A00A35C0041E0D5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F4F691202A00A3730041E0D5 /* DeveloperPreview.swift */,
+				F4F691222A00A44A0041E0D5 /* Color.swift */,
+				F4F691402A0B73A00041E0D5 /* Date.swift */,
+				F4F691462A0C848F0041E0D5 /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F4F691262A021C6D0041E0D5 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F4F691272A021C760041E0D5 /* View */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		F4F691272A021C760041E0D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F4F691282A021CE70041E0D5 /* SettingsView.swift */,
+				F4F6912A2A021D340041E0D5 /* SettingsRowView.swift */,
+				F4F6913A2A0B25430041E0D5 /* NotifySettingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F4F6912C2A021FFC0041E0D5 /* Statistic */ = {
+			isa = PBXGroup;
+			children = (
+				F4F6912D2A0220070041E0D5 /* View */,
+			);
+			path = Statistic;
+			sourceTree = "<group>";
+		};
+		F4F6912D2A0220070041E0D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F4F6912E2A0220250041E0D5 /* StatisticView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F4F691302A022ABB0041E0D5 /* Mission */ = {
+			isa = PBXGroup;
+			children = (
+				F4F691312A022ACC0041E0D5 /* View */,
+			);
+			path = Mission;
+			sourceTree = "<group>";
+		};
+		F4F691312A022ACC0041E0D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F4F6914C2A1463340041E0D5 /* Main */,
+				F4F6913C2A0B629C0041E0D5 /* AddMissionView.swift */,
+				F4F6914A2A126B2E0041E0D5 /* MissionDetailView.swift */,
+				F4F6914D2A1463DC0041E0D5 /* ModifyMissionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F4F691422A0BA71D0041E0D5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F4F691432A0BA73B0041E0D5 /* TodoService.swift */,
+				F47C4AE22A27156D00194551 /* StatisticService.swift */,
+				F47C4AE52A306ADD00194551 /* TomatoTimingService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F4F6914C2A1463340041E0D5 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F4F691322A022AE10041E0D5 /* MissionView.swift */,
+				F4F691342A022AFB0041E0D5 /* MissionRowView.swift */,
+				F4F691382A0A40FE0041E0D5 /* MissionListView.swift */,
+				F4F6913E2A0B62AF0041E0D5 /* AddMissionButton.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4F690F829FF452A0041E0D5 /* PomadoraWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4F6910729FF452A0041E0D5 /* Build configuration list for PBXNativeTarget "PomadoraWatch" */;
+			buildPhases = (
+				A2DB7E7546DFA0ABDA4E0747 /* [CP] Check Pods Manifest.lock */,
+				F4F690F529FF452A0041E0D5 /* Sources */,
+				F4F690F629FF452A0041E0D5 /* Frameworks */,
+				F4F690F729FF452A0041E0D5 /* Resources */,
+				A3A97BE3A2777118E8B62BB4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PomadoraWatch;
+			productName = PomadoraWatch;
+			productReference = F4F690F929FF452A0041E0D5 /* PomadoraWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4F690F129FF452A0041E0D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					F4F690F829FF452A0041E0D5 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = F4F690F429FF452A0041E0D5 /* Build configuration list for PBXProject "PomadoraWatch" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4F690F029FF452A0041E0D5;
+			productRefGroup = F4F690FA29FF452A0041E0D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4F690F829FF452A0041E0D5 /* PomadoraWatch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4F690F729FF452A0041E0D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4F6910429FF452A0041E0D5 /* Preview Assets.xcassets in Resources */,
+				F4F6910129FF452A0041E0D5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A2DB7E7546DFA0ABDA4E0747 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PomadoraWatch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3A97BE3A2777118E8B62BB4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PomadoraWatch/Pods-PomadoraWatch-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PomadoraWatch/Pods-PomadoraWatch-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PomadoraWatch/Pods-PomadoraWatch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4F690F529FF452A0041E0D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4F6913D2A0B629C0041E0D5 /* AddMissionView.swift in Sources */,
+				F4F691352A022AFB0041E0D5 /* MissionRowView.swift in Sources */,
+				F4F691472A0C848F0041E0D5 /* String.swift in Sources */,
+				F4F6911029FF70AA0041E0D5 /* SideMenuButton.swift in Sources */,
+				F4F691212A00A3730041E0D5 /* DeveloperPreview.swift in Sources */,
+				F47C4AE62A306ADD00194551 /* TomatoTimingService.swift in Sources */,
+				F4F691142A00A0A90041E0D5 /* SideMenuView.swift in Sources */,
+				F4F691192A00A1480041E0D5 /* SideMenuOptionViewModel.swift in Sources */,
+				F4F6910E29FF45B30041E0D5 /* MainMenuView.swift in Sources */,
+				F4F6913B2A0B25430041E0D5 /* NotifySettingView.swift in Sources */,
+				F4F691442A0BA73B0041E0D5 /* TodoService.swift in Sources */,
+				F4F6914B2A126B2E0041E0D5 /* MissionDetailView.swift in Sources */,
+				F4F690FD29FF452A0041E0D5 /* PomadoraWatchApp.swift in Sources */,
+				F4F6914E2A1463DC0041E0D5 /* ModifyMissionView.swift in Sources */,
+				F4F691162A00A0CA0041E0D5 /* SideMenuOptionView.swift in Sources */,
+				F4F691372A0237B60041E0D5 /* Task.swift in Sources */,
+				F4F691332A022AE10041E0D5 /* MissionView.swift in Sources */,
+				F4F6911E2A00A2C20041E0D5 /* User.swift in Sources */,
+				F4F6912F2A0220250041E0D5 /* StatisticView.swift in Sources */,
+				F4F6912B2A021D340041E0D5 /* SettingsRowView.swift in Sources */,
+				F4F691252A021A130041E0D5 /* SideMenuViewModel.swift in Sources */,
+				F4F691412A0B73A00041E0D5 /* Date.swift in Sources */,
+				F4F6913F2A0B62AF0041E0D5 /* AddMissionButton.swift in Sources */,
+				F4DF27F62A1624DC00539587 /* MainMenuViewModel.swift in Sources */,
+				F4F691232A00A44A0041E0D5 /* Color.swift in Sources */,
+				F4F691392A0A40FE0041E0D5 /* MissionListView.swift in Sources */,
+				F47C4AE32A27156D00194551 /* StatisticService.swift in Sources */,
+				F4F691292A021CE70041E0D5 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F4F6910529FF452A0041E0D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F4F6910629FF452A0041E0D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4F6910829FF452A0041E0D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E482B4AF6E0FBB0CD46E8F86 /* Pods-PomadoraWatch.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PomadoraWatch/PomadoraWatch.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PomadoraWatch/Preview Content\"";
+				DEVELOPMENT_TEAM = MMLC7KCWC8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hsnl.PomadoraWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4F6910929FF452A0041E0D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77F84CBEC0E1B8C781CC7D92 /* Pods-PomadoraWatch.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PomadoraWatch/PomadoraWatch.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PomadoraWatch/Preview Content\"";
+				DEVELOPMENT_TEAM = MMLC7KCWC8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hsnl.PomadoraWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4F690F429FF452A0041E0D5 /* Build configuration list for PBXProject "PomadoraWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4F6910529FF452A0041E0D5 /* Debug */,
+				F4F6910629FF452A0041E0D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4F6910729FF452A0041E0D5 /* Build configuration list for PBXNativeTarget "PomadoraWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4F6910829FF452A0041E0D5 /* Debug */,
+				F4F6910929FF452A0041E0D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4F690F129FF452A0041E0D5 /* Project object */;
+}
